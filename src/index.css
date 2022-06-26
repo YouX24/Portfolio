@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* background-image: url("./images/Sprinkle.svg"); */
+    background-color: rgb(36, 36, 36);
+    padding: 2rem 2rem 0 2rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.section-directory {
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.section-directory > a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-icon {
+    font-size: 1.4rem;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.intro-section > div {
+    text-align: center;
+    width: 700px;
+}
+
+.name {
+    color: white;
+    font-size: 3rem;
+}
+
+.intro-description {
+    color: white
+}
+
+.see-project-btn {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+}
+
+.skills > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 250px 100%;
+}
+
+.project-thumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    background-color: grey;
+    padding: 2rem;
+}
+
+.project-info > h3 {
+    margin: 0;
+}
+
+.tech-used {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 2px 7px;
+    margin: 3px;
+    font-size: 0.75rem;
+}
+
+.project-btn-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-btn {
+    display: block;
+}
+
+.project-btn > button {
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 50px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (max-width: 550px) {
+
+}
