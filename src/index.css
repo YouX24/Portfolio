@@ -4,14 +4,13 @@
 
 body {
     margin: 0;
-    /* background-image: url("./images/Sprinkle.svg"); */
-    background-color: rgb(36, 36, 36);
+    background: linear-gradient(#5680E9, #C1C8E4);
     padding: 2rem 2rem 0 2rem;
     font-family: "Ubuntu", sans-serif;
 }
 
 header {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -26,6 +25,89 @@ button {
     font-weight: bold;
 }
 
+.menu-btn-container {
+    cursor: pointer;
+    width: 35px;
+    height: 29px;
+    position: fixed;
+    right: 2rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn-burger {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(10px);
+}
+
+.open {
+    background: transparent;
+}
+
+.open::before  {
+    transform: rotate(45deg)
+}
+
+.open::after  {
+    transform: rotate(-45deg)
+}
+
+.burger-nav-menu {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.5s, visibility 0.5s ;
+    background-color: #8860D0;
+}
+
+.burger-nav-menu-center {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-nav-menu-center > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 .logo {
     margin: 0;
     font-size: 3rem;
@@ -33,7 +115,7 @@ button {
 }
 
 .section-directory {
-    display: flex;
+    display: none;
     gap: 2rem;
     justify-self: center;
     align-self: center;
@@ -45,7 +127,7 @@ button {
 }
 
 .socials {
-    display: flex;
+    display: none;
     gap: 2rem;
 }
 
@@ -57,12 +139,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 55px);
 }
 
 .intro-section > div {
     text-align: center;
-    width: 700px;
+    width: 400px;
 }
 
 .name {
@@ -79,6 +161,32 @@ button {
     width: 10rem;
     border-radius: 50px;
     cursor: pointer;
+    background: linear-gradient(45deg, #8860D0, 60%, #5AB9EA);
+    color: white;
+    border: none;
+}
+
+.section-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.section-center-no-margin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.section-label {
+    color: #FFF;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 5px 5px #3162df;
 }
 
 .skills {
@@ -106,6 +214,7 @@ button {
     overflow: hidden;
     display: grid;
     grid-template-rows: 250px 100%;
+    max-width: 600px;
 }
 
 .project-thumbnail {
@@ -115,7 +224,7 @@ button {
 }
 
 .project-info {
-    background-color: grey;
+    background: linear-gradient(#84CEEB, #8860D0);
     padding: 2rem;
 }
 
@@ -150,6 +259,18 @@ button {
     border-radius: 50px;
 }
 
+.about-p-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.about-p-container > p {
+    margin: 0;
+}
+
 footer {
     height: 100px;
     display: flex;
@@ -158,6 +279,16 @@ footer {
     gap: 3rem;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 550px) {
+    .menu-btn-container,
+    .burger-nav-menu {
+        display: none;
+    }
+
+    .section-directory,
+    .socials {
+        display: flex;
+    }
+
 
 }
