@@ -21,7 +21,7 @@ const dropIn = {
     }
 }
 
-const Modal = ({ handleClose, text }) => {
+const Modal = ({ handleClose, gif }) => {
     return (
         <Backdrop onClick={handleClose}>
             <motion.div
@@ -33,10 +33,9 @@ const Modal = ({ handleClose, text }) => {
                 exit="exit"
             >
                 <div>
-                    <img src="" alt=""/>
+                    <img className="gif" src={gif} alt=""/>
                 </div>
-                <p>{text}</p>
-                <button onClick={handleClose}>CLOSE</button>
+                <motion.button class="modal-close-btn" onClick={handleClose} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>X</motion.button>
             </motion.div>
         </Backdrop>
     )

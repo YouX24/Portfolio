@@ -11,7 +11,7 @@ import gitIcon from '../images/git.svg';
 
 const Skills = () => {
     return (
-        <section className="section-center">
+        <section className="section-center" id="my-skills">
             <h2 className="section-label">Skills</h2>
             <div className="skills">
                 <div>

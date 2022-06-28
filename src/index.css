@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: linear-gradient(#5680E9, #C1C8E4);
@@ -143,6 +147,28 @@ button {
     font-size: 1.4rem;
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    25% {
+        transform: rotate(-5deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    75% {
+        transform: rotate(5deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(0deg) scale(1.2);
+    }
+}
+
+.animated-link:hover {
+    animation: shake .3s ease-in-out .3s infinite alternate;
+}
+
 .intro-section {
     display: flex;
     align-items: center;
@@ -261,7 +287,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 1rem;
 }
 
@@ -285,15 +311,32 @@ button {
 }
 
 .modal {
-    width: clamp(50%, 700px, 90%);
-    background-color:#3162df;
-    height: min(50%, 300px);
+    position: relative;
+    width: clamp(800px, 700px, 90%);
+    background-color: transparent;
     margin: auto;
-    padding: 0 2rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50px;
+    background-color: #8860D0;
+    color: #FFF;
+    padding: 0.25rem .7rem;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.gif {
+    width: 100%;
+    display: block;
 }
 
 .about-p-container {
@@ -318,7 +361,7 @@ footer {
 }
 
 @media (min-width: 700px) {
-    
+
     .skills {
         grid-template-columns: repeat(4, 1fr);
     }

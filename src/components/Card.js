@@ -21,9 +21,9 @@ const Card = (props) => {
                 {techStack}
                 <div className="project-btn-center">
                     <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} onClick={toggleModal}>
-                        More info
+                        View project GIF
                     </motion.button>
-                    <a href={props.link}>
+                    <a href={props.link} target="_blank" rel="noopener noreferrer">
                         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
                             GitHub
                         </motion.button>
@@ -31,7 +31,7 @@ const Card = (props) => {
                 </div>
             </div>
             <AnimatePresence initial={false} exitBeforeEnter={true} onExitComplete={() => null}>
-                {modalOpen && <Modal modalOpen={modalOpen} handleClose={toggleModal} text="asdgasdf"/>}
+                {modalOpen && <Modal modalOpen={modalOpen} handleClose={toggleModal} gif={props.gif}/>}
             </AnimatePresence>
         </div>
     )
