@@ -25,14 +25,15 @@ const Header = () => {
         <header>
             <h3 className="logo">Y</h3>
             <div className="section-directory">
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Resume</a>
+                <a href="#"><i class="twa twa-hammer-and-wrench"></i> Skills</a>
+                <a href="#"><i class="twa twa-card-file-box"></i> Projects</a>
+                <a href="#"><i class="twa twa-laptop"></i> About</a>
+                <a href="#"><i class="twa twa-page-with-curl"></i> Resume</a>
             </div>
             <div className="socials">
                 <a href="https://www.linkedin.com/in/yousaexiong/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin social-icon"></i></a>
                 <a href="https://github.com/YouX24" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github social-icon"></i></a>
-                <a href=""><i class="fa-solid fa-envelope social-icon"></i></a>
+                <a href="mailto:x.yousae@gmail.com"><i class="fa-solid fa-envelope social-icon"></i></a>
             </div>
             <div className="menu-btn-container"  onClick={menuToggle}>
                 <div className="menu-btn-burger"></div>
@@ -41,17 +42,19 @@ const Header = () => {
                 <div className="burger-nav-menu-center">
                     <ul>
                         <li>
-                            <i class="twa twa-hammer-and-wrench"></i>
-                            <a href="skills"> Skills</a>
+                            <a href="skills"><i class="twa twa-hammer-and-wrench"></i> Skills</a>
                         </li>
                         <li>
-                            <i class="twa twa-card-file-box"></i>
-                            <a href="#my-projects"> Projects</a>
+                            <a href="#my-projects"><i class="twa twa-card-file-box"></i> Projects</a>
                         </li>
                         <li>
-                            <i class="twa twa-page-with-curl"></i>
-                            <a href="about"> About</a>
+                            <a href="about"><i class="twa twa-page-with-curl"></i> About</a>
                         </li>
+                        <div className="socials-nav-menu">
+                            <a href="https://www.linkedin.com/in/yousaexiong/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin social-icon"></i></a>
+                            <a href="https://github.com/YouX24" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github social-icon"></i></a>
+                            <a href="mailto:x.yousae@gmail.com"><i class="fa-solid fa-envelope social-icon"></i></a>
+                        </div>
                     </ul>
                 </div>
             </section>

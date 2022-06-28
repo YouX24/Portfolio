@@ -1,6 +1,14 @@
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Modal from './Modal';
 
 const Card = (props) => {
+
+    const [modalOpen, setModalOpen] = React.useState(false)
+
+    const toggleModal = () => {
+        setModalOpen(!modalOpen)
+    }
 
     const techStack = props.tech.map((t) => <span className="tech-used">{t}</span>)
 
@@ -12,9 +20,19 @@ const Card = (props) => {
                 <p>{props.description}</p>
                 {techStack}
                 <div className="project-btn-center">
-                    <a className="project-btn" href={props.link}><button>GitHub</button></a>
+                    <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} onClick={toggleModal}>
+                        More info
+                    </motion.button>
+                    <a href={props.link}>
+                        <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
+                            GitHub
+                        </motion.button>
+                    </a>
                 </div>
             </div>
+            <AnimatePresence initial={false} exitBeforeEnter={true} onExitComplete={() => null}>
+                {modalOpen && <Modal modalOpen={modalOpen} handleClose={toggleModal} text="asdgasdf"/>}
+            </AnimatePresence>
         </div>
     )
 }

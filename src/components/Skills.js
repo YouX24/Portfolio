@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import htmlIcon from '../images/html.svg';
 import cssIcon from '../images/css.svg';
 import jsIcon from '../images/javascript.svg';
@@ -14,35 +15,35 @@ const Skills = () => {
             <h2 className="section-label">Skills</h2>
             <div className="skills">
                 <div>
-                    <img src={htmlIcon} alt="html"/>
+                    <motion.img src={htmlIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>HTML</p>
                 </div>
                 <div>
-                    <img src={cssIcon} alt="html"/>
+                    <motion.img src={cssIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>CSS</p>
                 </div>
                 <div>
-                    <img src={jsIcon} alt="html"/>
+                    <motion.img src={jsIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>JavaScript</p>
                 </div>
                 <div>
-                    <img src={reactIcon} alt="html"/>
+                    <motion.img src={reactIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>React</p>
                 </div>
                 <div>
-                    <img src={nodeIcon} alt="html"/>
+                    <motion.img src={nodeIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>Node/Express</p>
                 </div>
                 <div>
-                    <img src={mongodbIcon} alt="html"/>
+                    <motion.img src={mongodbIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>MongoDB</p>
                 </div>
                 <div>
-                    <img src={javaIcon} alt="html"/>
+                    <motion.img src={javaIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>Java</p>
                 </div>
                 <div>
-                    <img src={gitIcon} alt="html"/>
+                    <motion.img src={gitIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>Git</p>
                 </div>
             </div>

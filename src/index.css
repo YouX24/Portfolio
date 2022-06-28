@@ -18,11 +18,13 @@ header {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 button {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .menu-btn-container {
@@ -131,6 +133,12 @@ button {
     gap: 2rem;
 }
 
+.socials-nav-menu {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
 .social-icon {
     font-size: 1.4rem;
 }
@@ -153,7 +161,9 @@ button {
 }
 
 .intro-description {
-    color: white
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
 .see-project-btn {
@@ -164,6 +174,7 @@ button {
     background: linear-gradient(45deg, #8860D0, 60%, #5AB9EA);
     color: white;
     border: none;
+    box-shadow: 0 0 10px 2px #FFF;
 }
 
 .section-center {
@@ -232,6 +243,10 @@ button {
     margin: 0;
 }
 
+.project-info > p {
+    line-height: 1.25;
+}
+
 .tech-used {
     display: inline-block;
     color: white;
@@ -246,17 +261,39 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
 }
 
-.project-btn {
-    display: block;
-}
-
-.project-btn > button {
+.project-btn-center > button,
+.project-btn-center > a > button {
     padding: 0.5rem 1rem;
-    margin-top: 1.5rem;
     border: none;
     border-radius: 50px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000000e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: clamp(50%, 700px, 90%);
+    background-color:#3162df;
+    height: min(50%, 300px);
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-p-container {
@@ -269,6 +306,7 @@ button {
 
 .about-p-container > p {
     margin: 0;
+    line-height: 1.5;
 }
 
 footer {
@@ -279,7 +317,15 @@ footer {
     gap: 3rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 700px) {
+    
+    .skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+
     .menu-btn-container,
     .burger-nav-menu {
         display: none;
@@ -290,5 +336,9 @@ footer {
         display: flex;
     }
 
-
+    .card {
+        grid-template-rows: 350px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
 }
