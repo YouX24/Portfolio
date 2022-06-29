@@ -1,5 +1,5 @@
 import React from 'react';
-import Soccer from '../images/relaxing-laptop.png'
+import Avatar from '../images/relaxing-laptop.png'
 
 const About = () => {
     return (
@@ -10,7 +10,7 @@ const About = () => {
                 <p>When I find a hobby I enjoy doing, I want to excel at it.</p>
                 <p>Activities I do when I am not programming are playing sports, watching Netflix, or hanging out with friends.</p>
             </div>
-            <img className="about-img" src={Soccer} alt="soccer"/>
+            <img className="about-img" src={Avatar} alt="soccer"/>
         </section>
     )
 }
