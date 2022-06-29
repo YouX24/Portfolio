@@ -15,11 +15,11 @@ const Skills = () => {
             <h2 className="section-label">Skills</h2>
             <div className="skills">
                 <div>
-                    <motion.img src={jsIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={jsIcon} alt="javascript" whileHover={{scale: 1.3}}/>
                     <p>JavaScript</p>
                 </div>
                 <div>
-                    <motion.img src={reactIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={reactIcon} alt="react" whileHover={{scale: 1.3}}/>
                     <p>React</p>
                 </div>
                 <div>
@@ -27,23 +27,23 @@ const Skills = () => {
                     <p>HTML</p>
                 </div>
                 <div>
-                    <motion.img src={cssIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={cssIcon} alt="css" whileHover={{scale: 1.3}}/>
                     <p>CSS</p>
                 </div>
                 <div>
-                    <motion.img src={nodeIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={nodeIcon} alt="node express" whileHover={{scale: 1.3}}/>
                     <p>Node/Express</p>
                 </div>
                 <div>
-                    <motion.img src={mongodbIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={mongodbIcon} alt="mongodb" whileHover={{scale: 1.3}}/>
                     <p>MongoDB</p>
                 </div>
                 <div>
-                    <motion.img src={javaIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={javaIcon} alt="java" whileHover={{scale: 1.3}}/>
                     <p>Java</p>
                 </div>
                 <div>
-                    <motion.img src={gitIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <motion.img src={gitIcon} alt="git" whileHover={{scale: 1.3}}/>
                     <p>Git</p>
                 </div>
             </div>
