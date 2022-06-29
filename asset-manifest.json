@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a5638c6d.css",
+    "main.css": "/Portfolio/static/css/main.c9b2e35f.css",
     "main.js": "/Portfolio/static/js/main.9c8feae3.js",
     "static/media/smart-city-gif.gif": "/Portfolio/static/media/smart-city-gif.ae7192d368ee52030462.gif",
     "static/media/steady-aid-gif.gif": "/Portfolio/static/media/steady-aid-gif.33d1297de8bea9d7e7c8.gif",
@@ -9,18 +9,18 @@
     "static/media/relaxing-laptop.png": "/Portfolio/static/media/relaxing-laptop.d51c4b2a3266e1aadbeb.png",
     "static/media/node.svg": "/Portfolio/static/media/node.b7d2308b16bd82b67987d0d1682f8e6b.svg",
     "static/media/java.svg": "/Portfolio/static/media/java.5386b56c3206b6bd70b1053534d73dc3.svg",
-    "static/media/react.svg": "/Portfolio/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
     "index.html": "/Portfolio/index.html",
+    "static/media/react.svg": "/Portfolio/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
     "static/media/mongodb.svg": "/Portfolio/static/media/mongodb.3beac5ba18197ccbdea6e2f53e18edcf.svg",
     "static/media/javascript.svg": "/Portfolio/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
     "static/media/git.svg": "/Portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.a5638c6d.css.map": "/Portfolio/static/css/main.a5638c6d.css.map",
+    "main.c9b2e35f.css.map": "/Portfolio/static/css/main.c9b2e35f.css.map",
     "main.9c8feae3.js.map": "/Portfolio/static/js/main.9c8feae3.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5638c6d.css",
+    "static/css/main.c9b2e35f.css",
     "static/js/main.9c8feae3.js"
   ]
 }
