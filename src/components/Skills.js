@@ -15,20 +15,20 @@ const Skills = () => {
             <h2 className="section-label">Skills</h2>
             <div className="skills">
                 <div>
-                    <motion.img src={htmlIcon} alt="html" whileHover={{scale: 1.3}}/>
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <motion.img src={cssIcon} alt="html" whileHover={{scale: 1.3}}/>
-                    <p>CSS</p>
-                </div>
-                <div>
                     <motion.img src={jsIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>JavaScript</p>
                 </div>
                 <div>
                     <motion.img src={reactIcon} alt="html" whileHover={{scale: 1.3}}/>
                     <p>React</p>
+                </div>
+                <div>
+                    <motion.img src={htmlIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <motion.img src={cssIcon} alt="html" whileHover={{scale: 1.3}}/>
+                    <p>CSS</p>
                 </div>
                 <div>
                     <motion.img src={nodeIcon} alt="html" whileHover={{scale: 1.3}}/>
@@ -47,7 +47,6 @@ const Skills = () => {
                     <p>Git</p>
                 </div>
             </div>
-            {/* Icons by <a target="_blank" href="https://icons8.com">Icons8</a> */}
         </section>
         
     )

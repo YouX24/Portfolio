@@ -352,12 +352,37 @@ button {
     line-height: 1.5;
 }
 
+.about-img {
+    width: 100%;
+    max-width: 586px;
+    margin-top: 1rem;
+}
+
 footer {
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-info {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.footer-attributions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-attributions > p {
+    margin: 0;
 }
 
 @media (min-width: 700px) {

@@ -28,7 +28,7 @@ const Header = () => {
                 <a class="animated-link" href="#my-skills"><i class="twa twa-hammer-and-wrench"></i> Skills</a>
                 <a class="animated-link" href="#my-projects"><i class="twa twa-card-file-box"></i> Projects</a>
                 <a class="animated-link" href="#about"><i class="twa twa-laptop"></i> About</a>
-                <a class="animated-link" href="#about"><i class="twa twa-page-with-curl"></i> Resume</a>
+                <a class="animated-link" href="https://drive.google.com/file/d/1uCs1MpOOE0rmo1GboQcMQXwGUEneC6Qn/view" target="_blank" rel="noopener noreferrer"><i class="twa twa-page-with-curl"></i> Resume</a>
             </div>
             <div className="socials">
                 <a class="animated-link" href="https://www.linkedin.com/in/yousaexiong/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin social-icon"></i></a>
@@ -51,7 +51,7 @@ const Header = () => {
                             <a href="#about"><i class="twa twa-laptop"></i> About</a>
                         </li>
                         <li class="animated-link" onClick={menuToggle}>
-                            <a href="#about"><i class="twa twa-page-with-curl"></i> Resume</a>
+                            <a href="https://drive.google.com/file/d/1uCs1MpOOE0rmo1GboQcMQXwGUEneC6Qn/view" target="_blank" rel="noopener noreferrer"><i class="twa twa-page-with-curl"></i> Resume</a>
                         </li>
                         <div className="socials-nav-menu">
                             <a  class="animated-link" href="https://www.linkedin.com/in/yousaexiong/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin social-icon"></i></a>
