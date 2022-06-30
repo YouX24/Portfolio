@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c9b2e35f.css",
-    "main.js": "/Portfolio/static/js/main.0752698c.js",
+    "main.css": "/Portfolio/static/css/main.611c2734.css",
+    "main.js": "/Portfolio/static/js/main.07e3a181.js",
     "static/media/smart-city-gif.gif": "/Portfolio/static/media/smart-city-gif.ae7192d368ee52030462.gif",
     "static/media/steady-aid-gif.gif": "/Portfolio/static/media/steady-aid-gif.33d1297de8bea9d7e7c8.gif",
     "static/media/smart-city.jpg": "/Portfolio/static/media/smart-city.08727eb13f371788b3b9.jpg",
@@ -16,11 +16,11 @@
     "static/media/git.svg": "/Portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.c9b2e35f.css.map": "/Portfolio/static/css/main.c9b2e35f.css.map",
-    "main.0752698c.js.map": "/Portfolio/static/js/main.0752698c.js.map"
+    "main.611c2734.css.map": "/Portfolio/static/css/main.611c2734.css.map",
+    "main.07e3a181.js.map": "/Portfolio/static/js/main.07e3a181.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9b2e35f.css",
-    "static/js/main.0752698c.js"
+    "static/css/main.611c2734.css",
+    "static/js/main.07e3a181.js"
   ]
 }
