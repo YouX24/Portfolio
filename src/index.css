@@ -384,6 +384,7 @@ footer {
 
 .footer-attributions > p {
     margin: 0;
+    font-size: 0.75rem;
 }
 
 @media (min-width: 700px) {
