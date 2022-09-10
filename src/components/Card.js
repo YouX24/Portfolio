@@ -20,10 +20,19 @@ const Card = (props) => {
                 <p>{props.description}</p>
                 {techStack}
                 <div className="project-btn-center">
-                    <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} onClick={toggleModal}>
-                        View project GIF
-                    </motion.button>
-                    <a href={props.link} target="_blank" rel="noopener noreferrer">
+                    {props.weblink && 
+                        <a href={props.weblink} target="_blank" rel="noopener noreferrer">
+                            <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
+                                View Live
+                            </motion.button>
+                        </a>
+                    }
+                    {props.gif && 
+                        <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} onClick={toggleModal}>
+                            View project GIF
+                        </motion.button>
+                    }
+                    <a href={props.github} target="_blank" rel="noopener noreferrer">
                         <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
                             GitHub
                         </motion.button>
